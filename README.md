@@ -22,6 +22,18 @@ Fork this repository under you user and work on the solution there. It should be
 project locally. Once you have completed your work send an email to the team member who do the project
 introduction letting them know you are ready for review.
 
+## Evaluation
+
+Your work will be evaluated for functional completeness based on the above stated goal. Additionally it will
+be reviewed with the following criteria in mind:
+
+* Project structure
+* Workflow practices
+* Implementatio choices
+
+A follow-up code review will be provided after the project is submitted where the candidate will be asked to
+provide any insights regarding their choices and practices.
+
 ## Bonus (don't need to be in the below specific order)
 
 * Add an indicator when information is loading
