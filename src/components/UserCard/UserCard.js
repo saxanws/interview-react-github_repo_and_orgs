@@ -3,7 +3,7 @@ import React from "react";
 
 import "./UserCard.css";
 
-// Component Content
+//  Render Component Content
 class UserCard extends React.Component {
     displayCard = () => {
         if (this.props.userInfo) {

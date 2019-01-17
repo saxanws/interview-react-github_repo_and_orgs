@@ -37,15 +37,11 @@ class App extends React.Component {
                 followings: followings,
                 loading: false,
             });
-
-            console.log(this.state);
         } catch (error) {
-            console.log(error);
             if(userName === '') {
                 this.resetState();
             } else {
-                this.setState({error: "User not found! ", loading: false})
-                console.log(this.state);
+                this.setState({error: "User not found! ", loading: false});
             }
         }
     }

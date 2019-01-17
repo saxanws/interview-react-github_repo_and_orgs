@@ -14,3 +14,10 @@
 .follow-wrapper {
     padding: 20px;
 }
+
+.org-item {
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: #c7c7c7;
+    padding: 10px;
+}

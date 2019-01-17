@@ -6,7 +6,7 @@ import  Organization from '../Organizations/Organization';
 import Follower from '../Follower/Follower'
 import './User.css'
 
-
+// Render component
 class User extends React.Component {
     state = {selectedInfo: 'repos'};
 
@@ -14,8 +14,9 @@ class User extends React.Component {
         this.setState({selectedInfo: selectedInfo});
     }
 
+    // Return the detail information of selected section
     displayDetail = () => {
-        if(this.state.selectedInfo === 'repos') {
+        if(this.state.selectedInfo === 'repos') { // Display repos component
             return (
                 <div>
                     <h3>Repositories</h3>
@@ -23,21 +24,22 @@ class User extends React.Component {
                     {this.returnListOfRepos()}
                 </div>
             )
-        } else if(this.state.selectedInfo === 'orgs') {
+        } else if(this.state.selectedInfo === 'orgs') { // Display organization component
             return (
                 <div>
                     <h3>Organizations</h3>
+                    <hr />
                     <br />
                     {this.returnListOfOrgs()}
                 </div>
             )
-        } else if(this.state.selectedInfo === 'followers') {
+        } else if(this.state.selectedInfo === 'followers') { // Display Follower component
             return (<div >
                 <h3>Followers</h3>
                 <br/>
                 {this.returnListOfFollowers(this.props.followers)}
             </div>);
-        } else if(this.state.selectedInfo === 'followings') {
+        } else if(this.state.selectedInfo === 'followings') { // Display Following component
             return (<div >
                 <h3>Followings</h3>
                 <br/>
@@ -48,7 +50,7 @@ class User extends React.Component {
         return <div>No selection</div>
     }
 
-    returnListOfRepos = () => {
+    returnListOfRepos = () => { // Compose the list of repos
         const {
             repos
         } = this.props;
@@ -61,22 +63,20 @@ class User extends React.Component {
 
     }
 
-    returnListOfOrgs = () => {
+    returnListOfOrgs = () => { // Compose the list of organization
         const {
             orgs
         } = this.props;
 
-        console.log(orgs);
-
         if(orgs.length > 0) {
-            return orgs.map(org => <div className="row" key={org.id}><Organization org={org}/></div>)
+            return orgs.map(org => <div className="row org-item" key={org.id}><Organization org={org}/></div>)
         } else {
             return <h3 className="row">No Organizations to show</h3>
         }
 
     }
 
-    returnListOfFollowers = (followers) => {
+    returnListOfFollowers = (followers) => { // Compose the list of followers and followings
         if(followers.length > 0) {
             return followers.map(follower => <div className="col-sm-6 col-md-3 col-lg-3 follow-wrapper" key={follower.id}><Follower follower={follower}/></div>)
         } else {
@@ -104,4 +104,5 @@ class User extends React.Component {
     }
 };
 
+// Export the component
 export default User;

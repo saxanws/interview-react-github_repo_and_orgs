@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Welcome.css';
 
+// Render the component
 const Welcome = () => {
     return (
         <div className="display-welcome ui segment">
@@ -11,4 +12,4 @@ const Welcome = () => {
     )
 };
 
-export default Welcome;
+export default Welcome; // Export component
