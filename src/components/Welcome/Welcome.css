@@ -1,0 +1,16 @@
+.display-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.display-welcome.ui.segment {
+    background-color: #ffffff;
+}
+
+
+
+/*.display-welcome i {*/
+/*background-color: black;*/
+/*}*/
