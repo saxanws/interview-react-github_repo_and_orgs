@@ -118,7 +118,7 @@
 
 .user-card {
     height: 200px;
-    background-color: #f5f9fa;
+    background-color: #c7c7c7;
     border-radius: 25px;
 }
 
@@ -151,6 +151,7 @@
     border-radius: 30px;
     align-items: center;
     text-align: center;
+    transition: 0.2s;
 }
 
 .bottom-link > span:hover {
@@ -159,4 +160,8 @@
 
 .badge {
     margin-left: 5px;
+}
+
+.badge-orange {
+    background-color: darkorange;
 }

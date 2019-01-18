@@ -8,7 +8,7 @@ const Organization = props => {
 
     return (
         <div className="org-wrapper">
-            <img src={avatar_url} className="col-lg-1 col-md-1" />
+            <img src={avatar_url} className="col-lg-1 col-md-1" alt="organization"/>
             <p className="col-md-11 col-lg-11">{description}</p>
         </div>
     );

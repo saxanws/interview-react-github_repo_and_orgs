@@ -17,9 +17,14 @@ const Repository = (props) => {
                     <h3>{name}</h3>
                     <p>{description}</p>
                 </div>
+                <br />
                 <div className="more-info">
-                    <span>{language}</span>
-                    <span>updated on june 02 2014</span>
+                    <div>
+                        <span className="badge language-indicator"> </span>
+                        <span className="language">{language}</span>
+                        <span>Updated: {`${new Date(updated_at).getMonth()}/${new Date(updated_at).getDate()}/${new Date(updated_at).getFullYear()}`}</span>
+                    </div>
+
                 </div>
             </div>
             <div className="col-md-3">
@@ -35,7 +40,7 @@ const Repository = (props) => {
                     </div>
                     <div className="row">
                     <span className="badge badge-pill badge-primary">
-                      <i className="eye icon"></i>
+                      <i className="star icon"></i>
                       Stars
                     </span>
                         <span className="badge badge-pill badge-primary pull-right">
@@ -44,7 +49,7 @@ const Repository = (props) => {
                     </div>
                     <div className="row">
                     <span className="badge badge-pill badge-primary">
-                      <i className="eye icon"></i>
+                      <i className="linkify icon"></i>
                       Forks
                     </span>
                         <span className="badge badge-pill badge-primary pull-right">

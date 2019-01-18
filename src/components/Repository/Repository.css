@@ -6,4 +6,21 @@
     border-width: thin;
     padding: 20px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.repo-wraper:hover {
+    border-color: darkorange;
+    background-color: #c7c7c7;
+    transform: scale(1.05);
+}
+
+.language-indicator {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: purple;
+}
+
+.language {
+    margin-right: 10px;
 }

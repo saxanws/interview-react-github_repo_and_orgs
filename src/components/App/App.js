@@ -3,7 +3,6 @@ import React from 'react';
 
 //import internal Components
 import SearchBar from '../SearchBar/SearchBar';
-import UserCard from '../UserCard/UserCard';
 import Welcome from '../Welcome/Welcome';
 import Loading from '../Loading/Loading';
 import Error from '../Error/Error';

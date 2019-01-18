@@ -23,7 +23,7 @@ class UserCard extends React.Component {
                 <div>
                     <div className="row user-card">
                         <div className="col-s-3 col-md-3 col-lg-3 profile-pic-container">
-                            <img className="profile-pic rounded" src={avatar_url}/>
+                            <img className="profile-pic rounded" src={avatar_url} alt="profile"/>
                         </div>
                         <div className="col-s-9 col-md-9 col-lg-9 row info-summary-container">
                             <div className="info-summary">
@@ -40,28 +40,28 @@ class UserCard extends React.Component {
                       onClick={() => onInfoSelect("repos")}
                   >
                     Repository
-                    <span className="badge">{public_repos}</span>
+                    <span className="badge badge-orange">{public_repos}</span>
                   </span>
                                     <span
                                         className="col-sm-3 col-md-3 col-lg-3"
                                         onClick={() => onInfoSelect("orgs")}
                                     >
                     Organization
-                    <span className="badge">{this.props.orgs}</span>
+                    <span className="badge badge-orange">{this.props.orgs}</span>
                   </span>
                                     <span
                                         className="col-sm-3 col-md-3 col-lg-3"
                                         onClick={() => onInfoSelect("followers")}
                                     >
                     Followers
-                    <span className="badge">{followers}</span>
+                    <span className="badge badge-orange">{followers}</span>
                   </span>
                                     <span
                                         className="col-sm-3 col-md-3 col-lg-3"
                                         onClick={() => onInfoSelect("followings")}
                                     >
                     Followings
-                    <span className="badge">{following}</span>
+                    <span className="badge badge-orange">{following}</span>
                   </span>
                                 </div>
                             </div>

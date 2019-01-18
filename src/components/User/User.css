@@ -18,6 +18,9 @@
 .org-item {
     margin-bottom: 50px;
     border-radius: 20px;
-    background-color: #c7c7c7;
+    /*background-color: #c7c7c7;*/
     padding: 10px;
+    /*border-radius: 25px;*/
+    border-style: solid;
+    border-width: thin;
 }

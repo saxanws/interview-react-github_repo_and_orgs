@@ -20,6 +20,7 @@ class User extends React.Component {
             return (
                 <div>
                     <h3>Repositories</h3>
+                    <hr/>
                     <br />
                     {this.returnListOfRepos()}
                 </div>
@@ -36,12 +37,14 @@ class User extends React.Component {
         } else if(this.state.selectedInfo === 'followers') { // Display Follower component
             return (<div >
                 <h3>Followers</h3>
+                <hr />
                 <br/>
                 {this.returnListOfFollowers(this.props.followers)}
             </div>);
         } else if(this.state.selectedInfo === 'followings') { // Display Following component
             return (<div >
                 <h3>Followings</h3>
+                <hr />
                 <br/>
                 {this.returnListOfFollowers(this.props.followings)}
             </div>)
