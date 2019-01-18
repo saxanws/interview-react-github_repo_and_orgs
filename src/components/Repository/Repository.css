@@ -24,3 +24,12 @@
 .language {
     margin-right: 10px;
 }
+
+.badge-info>div {
+    margin-bottom: 15px;
+
+}
+
+.date {
+    font-weight: bold;
+}

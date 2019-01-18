@@ -22,13 +22,13 @@ const Repository = (props) => {
                     <div>
                         <span className="badge language-indicator"> </span>
                         <span className="language">{language}</span>
-                        <span>Updated: {`${new Date(updated_at).getMonth()}/${new Date(updated_at).getDate()}/${new Date(updated_at).getFullYear()}`}</span>
+                        <span className="date">Updated: {`${new Date(updated_at).getMonth()}/${new Date(updated_at).getDate()}/${new Date(updated_at).getFullYear()}`}</span>
                     </div>
 
                 </div>
             </div>
             <div className="col-md-3">
-                <div className="pull-right">
+                <div className="badge-info pull-right">
                     <div className="row">
                     <span className="badge badge-pill badge-primary">
                       <i className="eye icon"></i>

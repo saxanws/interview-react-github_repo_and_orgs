@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
                                 <i className="huge github alternate icon"></i>
                             </label>
                             <div className="twelve wide column">
-                                <div className="ui icon input">
+                                <div className="ui icon huge input">
                                     <input
                                         type="text"
                                         placeholder="Search"
