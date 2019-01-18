@@ -95,6 +95,7 @@ class User extends React.Component {
             <div className="user-wrapper ui">
                 <div className="user-card-wrapper row">
                     <UserCard className="row" userInfo={userInfo} orgs={orgs.length} onInfoSelect={this.onInfoSelect}/>
+                    <h1>Hi</h1>
                 </div>
                 <div className="user-detected-detail row">
                     {this.displayDetail()}
